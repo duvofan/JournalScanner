@@ -1,0 +1,5 @@
+* text=auto
+*.bat text eol=crlf
+*.rc text eol=crlf
+*.tar.gz binary
+*.ico binary

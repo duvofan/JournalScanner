@@ -1,0 +1,56 @@
+[package]
+name = "js-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+windows = { workspace = true, features = [
+    "Win32_Devices_DeviceAndDriverInstallation",
+    "Win32_Devices_Properties",
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_Environment",
+    "Win32_System_EventLog",
+    "Win32_System_IO",
+    "Win32_System_Ioctl",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Registry",
+    "Win32_System_SystemInformation",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+] }
+bzip2 = { workspace = true }
+cab = "0.6"
+crc32fast = { workspace = true }
+delharc = "0.6"
+fancy-regex = { workspace = true }
+flate2 = { workspace = true }
+liblzma = { workspace = true }
+lz4_flex = { workspace = true }
+lzma-rs = { workspace = true }
+memchr = { workspace = true }
+regex = { workspace = true }
+regex-automata = { workspace = true }
+rusqlite = { workspace = true }
+ruzstd = { workspace = true }
+sevenz-rust2 = { workspace = true }
+sha1 = { workspace = true }
+sha2 = { workspace = true }
+tar = { workspace = true }
+unrar = "0.5"
+
+[target.'cfg(windows)'.dependencies]
+windows = { workspace = true, features = [
+    "Win32_Storage_FileSystem",
+    "Win32_System_SystemInformation",
+    "Win32_System_Threading",
+] }
+regex = { workspace = true }
+regex-automata = { workspace = true }
+fancy-regex = { workspace = true }
+flate2 = { workspace = true }
+bzip2 = { workspace = true }
+liblzma = { workspace = true }
+crc32fast = { workspace = true }
