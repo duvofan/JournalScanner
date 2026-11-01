@@ -1,0 +1,12 @@
+[package]
+name = "js-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "jscli"
+path = "src/main.rs"
+
+[dependencies]
+js-core.workspace = true
+mimalloc.workspace = true
