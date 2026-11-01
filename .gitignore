@@ -1,0 +1,14 @@
+# derleme ciktilari
+build/
+build-*/
+out/
+bin/
+*.zip
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.user
+/target
+.claude/worktrees/
